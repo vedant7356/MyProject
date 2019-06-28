@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbg">
+
+    <View
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:alpha="0.6"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="244dp"
+        android:layout_height="52dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="LOGIN"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="TO"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:id="@+id/textView2"
+        android:layout_marginTop="55dp"
+        android:layout_alignTop="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Event-ows"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:drawableLeft="@drawable/ic_email_white_24dp"
+        android:drawablePadding="10dp"
+        android:hint="Enter User Email"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#cccccc"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:drawablePadding="10dp"
+        android:singleLine="true"
+        android:hint="Enter User Passwrod"
+        android:drawableLeft="@drawable/ic_vpn_key_white_24dp"
+        android:textSize="20sp"
+        android:textColorHint="#cccccc"
+        android:textColor="#FFFFFF"
+        android:id="@+id/etpass"
+        android:layout_below="@+id/etname"
+        android:layout_alignLeft="@+id/etname"
+        android:layout_alignStart="@+id/etname"
+        android:layout_alignRight="@+id/etname"
+        android:layout_alignEnd="@+id/etname" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@android:color/holo_blue_bright"
+        android:text="SIGN IN"
+        android:textSize="20sp"
+        android:id="@+id/btlogin"
+        android:layout_below="@+id/etpass"
+        android:layout_marginTop="6dp"
+        android:layout_alignLeft="@+id/etpass"
+        android:layout_alignStart="@+id/etpass"
+        android:layout_alignRight="@+id/etpass"
+        android:layout_alignEnd="@+id/etpass" />
+
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btlogin"
+        android:layout_alignLeft="@+id/btlogin"
+        android:layout_alignEnd="@+id/btlogin"
+        android:layout_alignRight="@+id/btlogin"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="6dp"
+        android:alpha="0.6"
+        android:gravity="center_horizontal"
+        android:text="Events | Shows | Fun | Enjoy | Love | Happy | Surprise | Excitment | Blog | Facebook | Google | Kitkat | Marshmallow | Google"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Are you new? Sign up now."
+        android:textColor="#ffffff"
+        android:id="@+id/tvreg"
+        android:layout_marginTop="62dp"
+        android:layout_below="@+id/btlogin"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btlogin"
+        android:layout_marginTop="23dp"
+        android:text="Number Of Attempts:"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+    <TextView
+        android:id="@+id/tvfpassnew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btlogin"
+        android:layout_marginTop="106dp"
+        android:layout_centerHorizontal="true"
+        android:text="Forgot Password? Verify now."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+
+</RelativeLayout>
